@@ -1,6 +1,6 @@
-import React from 'react'
-import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import React from 'react';
+import Title from '../layouts/Title';
+import { projectOne, projectTwo, projectThree, projectFour } from "../../assets/index"; // Ensure projectFour is imported
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -9,52 +9,42 @@ const Projects = () => {
       id="projects"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
-      <div className="flex justify-center items-center text-center">
+      <div className="flex items-center justify-center text-center">
         <Title
           title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
           des="My Projects"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Fitness App"
+          des="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectOne}
+          liveLink="https://didactic-sniffle.vercel.app"
+          githubLink="https://github.com/yourusername/fitness-app" // Replace with your actual GitHub link
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          title="VPN Website"
+          des="A feature-rich VPN website built with Tailwind CSS. Secure your online presence with ease and style!"
+          src={projectTwo} // Ensure this is the correct image for the VPN project
+          liveLink="https://lasles-vpn-tailwind-css-project-nccosfpda.vercel.app" // Correct live link
+          githubLink="https://github.com/yourusername/vpn-website" // Replace with your actual GitHub link
         />
         <ProjectsCard
           title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          des="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
           src={projectThree}
         />
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-        />
-        <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
+          title="Project Four" // Update with the actual title of your new project
+          des="Description of Project Four. Highlight its features and purpose." // Update with a brief description
+          src={projectFour} // Ensure this is the correct image for projectFour
+          liveLink="https://your-project-four-live-link.com" // Replace with the actual live link
+          githubLink="https://github.com/yourusername/project-four" // Replace with your actual GitHub link
         />
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects; // Ensure this line is present
